@@ -6,8 +6,8 @@ body{
     background: white;
     color: $primary-violet;
     font-size:16px;
-    font-family: $primary-font;
-  
+    font-family: $primary-font; 
+    width:100vw; 
 }
 *{
     padding:0;
@@ -24,25 +24,16 @@ li{
     list-style: none;
 }
 
+
 //////////////////////////////////// NAV BAR ////////////////////////////////////
 nav{
     display:flex;
     justify-content: space-between;
     align-items: center;
-    ul{
-        display:flex;
-        align-items: center;
-        justify-content: space-between;
-
-        a:hover{
-            color: $primary-violet;
-        }
-        
-        li{
-            margin-left:2rem;
-        }
-    }
+    position:relative;
+    height:75px; 
 }
+
 
 //////////////////////////////HERO SESSION ///////////////////////////////////////////
 
@@ -55,13 +46,14 @@ nav{
 
         &-intro-text{
             padding: 3rem 0;
-            height:100%;
-            width:50%;
+            height:50%;
+            width:100%;
             z-index:6;
+            
 
         }
         &-intro-pic{
-            width:45%;
+            width:100%;
             z-index:3;
 
             img{
@@ -77,9 +69,7 @@ nav{
             content: "";
             bottom:0;
             right:0;
-
-        }
-   
+        } 
      
 }
 .overlay-right{
@@ -93,8 +83,6 @@ nav{
     position:absolute;
     top:50%;
     left:0;
-    width:20%;
-    height:50%;
     z-index:5;
 
 }
@@ -152,16 +140,22 @@ nav{
     }
 
 }
+.social-media-icons{
 
-.social-media-icons i{
-    font-size: 1.5rem;
-    line-height:2rem;
-    margin-left:1.5rem;
-    cursor: pointer;
-    color: #888;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
 
-    &:hover{
-        color:$primary-violet;
+    i{
+        font-size: 1.5rem;
+        line-height:2rem;
+        margin-left:1.5rem;
+        cursor: pointer;
+        color: #888;
+    
+        &:hover{
+            color:$primary-violet;
+        }
     }
 }
 
@@ -172,5 +166,9 @@ nav{
 
 
 
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@import 'responsive';
