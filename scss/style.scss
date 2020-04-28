@@ -1,0 +1,176 @@
+@import 'config';
+@import 'ulities';
+
+
+body{
+    background: white;
+    color: $primary-violet;
+    font-size:16px;
+    font-family: $primary-font;
+  
+}
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: $primary-grayblue;
+}
+
+
+li{
+    list-style: none;
+}
+
+//////////////////////////////////// NAV BAR ////////////////////////////////////
+nav{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    ul{
+        display:flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a:hover{
+            color: $primary-violet;
+        }
+        
+        li{
+            margin-left:2rem;
+        }
+    }
+}
+
+//////////////////////////////HERO SESSION ///////////////////////////////////////////
+
+.hero{
+        width:100%;
+        background: $primary-violet;
+        color: white;
+        position:relative;
+        z-index:1;
+
+        &-intro-text{
+            padding: 3rem 0;
+            height:100%;
+            width:50%;
+            z-index:6;
+
+        }
+        &-intro-pic{
+            width:45%;
+            z-index:3;
+
+            img{
+                width:100%;  
+            }
+        }
+        &:after{
+            width:100%;
+            position: absolute;
+            height:20%;
+            background: white;
+            z-index:2;
+            content: "";
+            bottom:0;
+            right:0;
+
+        }
+   
+     
+}
+.overlay-right{
+    position:absolute;
+    top:0;
+    right:0;
+    z-index:5;
+}
+
+.overlay-left{
+    position:absolute;
+    top:50%;
+    left:0;
+    width:20%;
+    height:50%;
+    z-index:5;
+
+}
+
+
+ 
+.banner{
+    background: $primary-violet;
+    color: white;
+    position:relative;
+    overflow: hidden;
+
+    &-heading{
+        width:60%;
+        padding-right:3rem;
+    }
+    &-bg-pattern{
+        position:absolute;
+        top:0;
+        right:0;
+        height:100%;
+        width:30%;
+
+ 
+    }
+}
+
+.footer{
+    background: $n-light-gray;
+    position: relative;
+
+    &-overlay{
+        position: absolute;
+        top:0;
+        left:0;
+    }
+
+    &-heading{
+        border-bottom: 1px solid #ccc;
+    }
+    &-flex{
+        width:22%;
+        li{
+            padding: 0.3rem 0;
+        }
+
+        a{
+            color: $primary-violet;
+            
+
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+    }
+
+}
+
+.social-media-icons i{
+    font-size: 1.5rem;
+    line-height:2rem;
+    margin-left:1.5rem;
+    cursor: pointer;
+    color: #888;
+
+    &:hover{
+        color:$primary-violet;
+    }
+}
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

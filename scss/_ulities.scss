@@ -1,0 +1,112 @@
+//Text
+
+.text-lead{
+   color: $primary-grayblue;
+}
+.text-heading{
+    font-family: $heading-font;
+    letter-spacing: 1px;
+}
+
+.large{
+    font-size:3rem;
+}
+
+.x-large{
+    font-size:4rem;
+}
+
+.lh-2{
+    line-height: 2;
+}
+
+
+//Layout
+
+.wrapper{
+    padding: 0 8%;
+    position:relative;
+}
+
+.session-header-line{
+    position:absolute;
+    content:"";
+    height:2px;
+    width:150px;
+    background: $primary-grayblue;
+    top:0;
+    left:8%;
+}
+
+.flex-box{
+    display:flex;
+    justify-content: space-between;
+
+    &.align-center{
+        align-items: center;
+    }
+
+}
+
+.flex-item{
+    flex:1;
+}
+
+
+.py-1{
+    padding: 1rem 0;
+}
+.py-2{
+    padding: 2rem 0;
+}
+.py-3{
+    padding: 3rem 0;
+}
+.py-4{
+    padding: 4rem 0;
+}
+.py-6{
+    padding: 6rem 0;
+}
+.p-1{
+    padding: 1rem;
+}
+.my-1{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+
+//Buttons
+.btn{
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    &.btn-large{
+        padding: 1rem 1.8rem;
+    }
+    z-index:999;
+}
+
+.btn-primary{
+   
+    border: 1px solid $primary-violet;
+    color: $primary-violet;
+
+    &:hover{
+        background: $primary-violet;
+        color:white;
+    }
+}
+
+.btn-white{
+    padding: 0.5rem 1rem;
+    border: 1px solid white;
+    color: white;
+    &:hover{
+        background: white;
+        color:$primary-violet;
+    }
+}
+
+
+
